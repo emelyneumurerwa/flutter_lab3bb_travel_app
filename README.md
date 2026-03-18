@@ -1,17 +1,58 @@
-# travel_app
+# ✈️ Travel App — Flutter Lab 3B
 
-A new Flutter project.
+A Flutter travel application that lets users explore destinations, filter by category, view details, and make bookings.
+
+## Features
+
+- Browse travel destinations (Bali, Paris, Dubai, Tokyo, Rome)
+- Filter by category: All, Beach, City, Culture
+- View destination details with ratings and pricing
+- Booking screen with trip confirmation
+
+## Screens
+
+### Home Screen
+![Home Screen](screenshort/Home%20screen.jpeg)
+
+### Filter by Category
+![Filter](screenshort/filter.jpeg)
+
+### Destination Detail — Paris
+![Paris Screen](screenshort/Paris%20screen.jpeg)
+
+### Destination Detail — Rome
+![Rome Screen](screenshort/Rome%20screen.jpeg)
+
+### Destination Detail — Bali
+![Bali](screenshort/Bali.jpeg)
+
+### Booking Screen
+![Booking Screen](screenshort/Booking%20screen.jpeg)
+
+## Project Structure
+
+```
+lib/
+├── data/
+│   └── travel_data.dart       # Destination model & data
+├── screens/
+│   ├── home_screen.dart       # Main listing screen
+│   ├── detail_screen.dart     # Destination detail
+│   └── booking_screen.dart    # Booking form
+├── widgets/
+│   ├── destination_card.dart  # Card widget
+│   └── category_chip.dart     # Filter chip widget
+└── main.dart
+```
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+```bash
+flutter pub get
+flutter run
+```
 
-A few resources to get you started if this is your first Flutter project:
+## Requirements
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Flutter SDK ≥ 3.0
+- Dart ≥ 3.0
